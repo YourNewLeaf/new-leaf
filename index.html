@@ -32,6 +32,12 @@
       margin-top: 0.5rem;
       color: #555;
     }
+    .icon {
+      width: 60px;
+      height: auto;
+      display: block;
+      margin: 1rem auto 0;
+    }
     .container {
       max-width: 800px;
       margin: 2rem auto;
@@ -39,6 +45,33 @@
     }
     .section {
       margin-bottom: 2rem;
+    }
+    .disclaimer {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 1rem;
+    }
+    .button-link {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background-color: #2d6a4f;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+    .button-link:hover {
+      background-color: #1b4d3e;
+    }
+    #more-info {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
     }
     footer {
       text-align: center;
@@ -48,6 +81,12 @@
       color: #777;
     }
   </style>
+  <script>
+    function toggleMoreInfo() {
+      const moreInfo = document.getElementById('more-info');
+      moreInfo.style.display = moreInfo.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -62,6 +101,13 @@
       <p>
         New Leaf was born from a love of Polynesian culture, sustainable living, and the nurturing power of the taro plant.
         With roots in tradition and a heart for renewal, we grow and share taro as a symbol of fresh starts, nourishment, and connection.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>🌺 Cultural Significance</h2>
+      <p>
+        In Polynesian mythology, taro is considered sacred and deeply connected to ancestry. According to legend, the taro plant (called "kalo" in Hawaiian) sprouted from the buried body of the first stillborn child of the gods — making it the elder sibling of humankind. Taro thus represents life, family, and the bond between people and nature.
       </p>
     </div>
 
@@ -81,18 +127,3 @@
       <p><strong>Coconut Taro Bites:</strong></p>
       <ol>
         <li>Peel and cube 1 cup taro root</li>
-        <li>Steam until soft (20–30 mins)</li>
-        <li>Mash with 1/2 cup coconut milk and 2 tbsp honey</li>
-        <li>Form into small balls and roll in shredded coconut</li>
-        <li>Chill for 1 hour before serving</li>
-      </ol>
-      <p><em>Enjoy a traditional treat with a tropical twist!</em></p>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 New Leaf. Grown with love in NC.
-  </footer>
-</body>
-</html>
-
